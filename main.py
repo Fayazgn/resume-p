@@ -11,7 +11,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 db = SQLAlchemy()
 app.config['WTF_CSRF_SECRET_KEY'] = "b'f83l\x19\xad\x84\x08\xaa\xfa\x8b{X\x8b\x9eM\x83l\x19\xad\x84\x08\xaa"
-app.config["SQLALCHEMY_DATABASE_URI"]= 'sqlite:///' + os.path.join(basedir, 'fayaz.db')
+app.config["SQLALCHEMY_DATABASE_URI"]= 'sqlite:///' + os.path.join(basedir, 'fayazdb.db')
 app.config['SECRET_KEY'] = "b'f\xfa\x8b{X\x8b84\x08\\x19\xad\x84\x08\xaa"
 app.config['UPLOAD_FOLDER'] = os.path.join(basedir, 'static/img/profile')
 # app.config['UPLOAD_FOLDER'] = 'D://project//static//img//profile/'
